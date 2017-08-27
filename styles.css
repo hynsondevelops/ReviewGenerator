@@ -1,0 +1,54 @@
+body
+{
+	background-color: rgb(43, 146, 160);
+    width:50%;
+    margin-left:auto;
+    margin-right:auto;
+}
+.review
+{
+	background-color: #FF8141;
+	margin: 20px;
+	display: inline-block;
+}
+
+textarea
+{
+	background-color: #FF8141;
+}
+#formL1
+{
+	background-color: #FFB041;
+	display: inline-block;
+	border: 1px black solid;
+	height: 400px;
+	width: 807px;
+}
+
+
+#name
+{
+	margin: 20px;
+	float: left;
+	height: 200px;
+	width: 227px;
+
+}
+
+
+#gender
+{
+	float: left;
+	margin: 20px;
+	height: 200px;
+	width: 227px;
+}
+
+
+#level
+{
+	margin: 20px;
+	float: left;
+	height: 200px;
+	width: 227px;
+}
