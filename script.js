@@ -13,15 +13,15 @@ var sampleSentencesL2 = ['boy is progressing well in understanding.', 'boy can f
 
 var sampleSentencesL3 = ['5 happy stars today! ', 'boy is progressing well in understanding.', 'boy is a wonderful reader.', 'boy knows all of the lesson vocabulary.',
 'boy can deepen language understanding with conversation which was done so well today.', ' boy is wonderful and hardworking and I see progress throughout the class.',
-'Wow - reading so fast.', 'boy is an exceptional student', 'I can see that boy is working very hard on his English.', 'Congratulations on a great assessment.',
-'boy spoke well', 'boy did a very good job today.']
+'Wow - reading so fast.', 'boy is an exceptional student.', 'I can see that boy is working very hard on his English.', 'Congratulations on a great assessment.',
+'boy spoke very well.', 'boy did a very good job today.']
 
 
 var sampleSentencesL4 = ['5 happy stars today! ', 'boy is progressing well in understanding.', ' boy is wonderful and hardworking and I see progress throughout the class.',
 'boy is an exceptional student', 'I can see that boy is working very hard on his English.', 'Congratulations on a great assessment.']
 
-var sampleSentencesTrial = ['It was so nice to meet you today.', 'boy is a hardworking student', 'boy could repeat all of the words and sentences', 'Excellent 5 star job.', 
-'I think boy could continue to rapidly advance in English with VIPKID', 'I think starting at a young age gives a big advantage.', 'boy is an excellent candidate for VIPKID']
+var sampleSentencesTrial = ['It was so nice to meet you today.', 'boy is a hardworking student.', 'boy could repeat all of the words and sentences.', 'Excellent 5 star job.', 
+'I think boy could continue to rapidly advance in English with VIPKID.', 'I think starting at a young age gives a big advantage.', 'boy is an excellent candidate for VIPKID.']
 
 
 var endingSentences = ['See you next time from teacher Deborah.', 'See you soon from teacher Deborah.']
@@ -42,12 +42,15 @@ function createRandomizedReview(gender, name, sampleSentences)
 			if (i % 2 == 0)
 			{
 				randomSentence = randomSentence.replace('boy', gender)
+				console.log(randomSentence)
+
 			}
 			else
 			{
 				randomSentence = randomSentence.replace('boy', name)
 			}
 			console.log(randomSentence)
+			console.log(randomSentence.replace('boy', gender))
 			review.text += randomSentence;
 			review.text += ' '
 			i += 1
