@@ -21,18 +21,17 @@ textarea
 	background-color: #FFB041;
 	display: block;
 	border: 1px black solid;
-	height: 150px;
-	width: 807px;
-
+	height: 280px;
+	width: 610px;
 }
 
 
 #name
 {
-	margin: 10px;
+	margin-left: 5px;
 	float: left;
 	height: 100px;
-	width: 227px;
+	width: 200px;
 
 }
 
@@ -40,22 +39,33 @@ textarea
 #gender
 {
 	float: left;
-	margin: 10px 10px 10px 30px;
+	margin: 2px;
 	height: 100px;
-	width: 227px;
+	width: 130px;
 }
 
 
 #level
 {
-	margin: 10px;
+	margin: 2px;
 	float: left;
 	height: 100px;
-	width: 227px;
+	width: 250px;
 }
 
 #generateButton
 {	
-	margin-left: 390px;
+	margin-top: 40px;
+	margin-left: 25px;
 	background-color: #FF8141;
+	height: 60px;
+	width: 120px;
+}
+
+#displayButton
+{	
+	margin-left: 50px;
+	background-color: #FF8141;
+	height: 60px;
+	width: 120px;
 }

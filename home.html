@@ -5,8 +5,8 @@
 	    <link rel = "stylesheet" href = "styles.css"> 
 	</head>
 	<body>
-		<h1> Review Generator </h1>
-		<h3> Randomizer Fields </h3>
+		<h1> Review Templates </h1>
+		
 
 		<form id = "formL1">
 			<div id = "name">
@@ -20,13 +20,19 @@
 			</div>
 			<div id = "level">
 				<h3> Level </h3>
-				<input type="radio" name="level" value="1">Level 1
-				<input type="radio" name="level" value="2">Level 2
-				<input type="radio" name="level" value="3">Level 3
-				<input type="radio" name="level" value="trial">Trial
+				<input type="radio" name="level" value="7">Pre-VIP Trial<br>
+				<input type="radio" name="level" value="9">Reader Trial
+				<input type="radio" name="level" value="8">Non-reader Trial<br>
+				<input type="radio" name="level" value="10">MC Pre-Vip<br>
+				<input type="radio" name="level" value="1">MC Level 1
+				<input type="radio" name="level" value="4">MC Level 4<br>
+				<input type="radio" name="level" value="2">MC Level 2
+				<input type="radio" name="level" value="5">MC Level 5<br>
+				<input type="radio" name="level" value="3">MC Level 3
+				<input type="radio" name="level" value="6">MC Level 6<br>
 			</div>
 			<button id="generateButton" type="button" onclick="generate()">Generate</button>
-
+			<button id="displayButton" type="button" onclick="display()">Display</button>
 		</form>		
 		<div id = "premades">
 
