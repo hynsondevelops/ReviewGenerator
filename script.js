@@ -84,7 +84,7 @@ function generateReview(gender, name, content)
 	{
 		content = content.replace(/He/g, 'She')
 	}
-	var review = content + endingSentences
+	var review = content + endingSentence
 	var premadesDiv = document.getElementById('premades')
 	var reviewString = "<div class = 'review'><textarea rows='7' cols='90'>" + review + "</textarea></div>"
 	premadesDiv.innerHTML += reviewString
