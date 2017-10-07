@@ -242,6 +242,8 @@ function generate()
 
 
 
+
+
 document.addEventListener('DOMContentLoaded', function()
 {
 	//var random1 = createRandomizedReview('He', 'Jimmy', sampleSentencesL1)
