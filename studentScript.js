@@ -78,7 +78,7 @@ var sampleSentences = ['He is a hard working student.', 'He speaks very well!', 
 
 
 //Random Banks
-var IntroductorySentenceBank = ["It was very nice to see He today"];
+var IntroductorySentenceBank = ["It was very nice to see name today"];
 var ConclusionSentenceBank = ["It was my pleasure to work with you today", "5 super stars! See you again soon! -From Teacher Deborah", "I am looking forward to our next class together", "Enjoy the school holiday! Please review the notes on the text box in the lesson video for specific words and grammar to review", "Overall a great job--5 happy stars today"];
 var AssessmentSentenceBank = ["He did very well on this assessment", "He was able to complete each task of the assessment independently", "He chose the correct word on the assessment tasks", "Congratulations on a job well done"];
 var UpperLevelSentenceBank = ["He read all of the paragraphs very well", "He read fluidly", "He is speaking well with correct pronunciation", "He is well able to read long and difficult words", "I see lots of progress in confidence", "He has excellent thinking skills", "The words in this lesson have many syllables and are hard to say-well done", "He answered lots of questions.He could practice saying more full sentences.He is a great learner", "The handwriting is excellent! He listens well", "He listens well", "He pays close attention", "He is an active learner", "He seems engaged in the lesson", "He seems happy to learn English", "He seems quick to learn new words", "He is an enthusiastic student", "He is hard working in class", "He is progressing well in his learning of English", "He is a favorite student of mine", "He is an exciting student to teach", "He is cooperative in learning", "He circles the answers well"];
@@ -271,7 +271,6 @@ function generate()
 	console.log(form.gender)
 	var sampleSentences = ''
 	console.log(form.level.value)
-	console.log("ASS")
 	console.log(form.assessment.checked)
 	switch (form.level.value)
 	{
