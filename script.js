@@ -1,250 +1,267 @@
-//name -> info in name field
-//He -> He or She depending on gender field
-//Replace what is in the single quotes with the content for previp trial
-var contentPreVIPTrial = 'It was so nice to meet name today! He is a hard working student. He speaks very well! He could repeat all of the words and letters. He is young and learning this type of classroom. I am impressed at how quickly name learns! He said: "happy, star, bear, bubbles, monkey, yes, ok,go". The teachers here are all kind and friendly. He will feel comfortable to learn English.  Excellent 5 star job! I think with practice in this type of setting, name will rapidly advance in the program. I think starting at a young age gives name a big advantage. name is an excellent candidate for VIPKID.'
-
-//Replace what is in the single quotes with the content for nonreader trial
-var contentNonreaderTrial = 'It was so nice to meet name today! He is a hard working student. He speaks very well! He could repeat all of the words and letters. He is young and learning this type of classroom. I am impressed at how quickly name learns! He said: "happy, star, bear, bubbles, monkey, yes, ok,go". The teachers here are all kind and friendly. He will feel comfortable to learn English. Excellent 5 star job! I think with practice in this type of setting, he will rapidly advance in the program. I think starting at a young age is a big advantage. name is an excellent candidate for VIPKID. Excellent 5 star job!'
-
-//Replace what is in the single quotes with the content for reader trial
-var contentReaderTrial = 'It was so nice to meet name today! He is a hard working student. name speaks very well! He could repeat all of the words and sentences. name did a good job with reading. Practice speaking with a native speaker will help name make fast progress with pronunciation. The teachers here are all kind and friendly. He will feel comfortable to expand on already good English. Excellent 5 star job! I think with practice in this type of setting he will rapidly advance in the program. name is an excellent candidate for VIPKID. Excellent 5 star job!'
-
-//Replace what is in the single quotes with the content for MC previp
-var contentMCPreVIP = 'It is nice to meet adorable name. He participates fully in class. He can practice putting "a" in front of nouns. "I see a cat". name knows all of the letters and can match big to small. He can put together sentences with the help of the teacher. "I draw a line. I love Dino". name sang three songs today!! Please review the notes on the text box in the lesson video for specific words and grammar to review. Great 5 happy star job today.'
-
-//Replace what is in the single quotes with the content for level 1
-var contentLevel1 = 'It is nice to meet adorable name. He participates fully in class. name can practice putting "a" in front of nouns. "I see a cat". name knows all of the letters and can match big to small. He can put together sentences with the help of the teacher. " I draw a line. I love Dino". He sang three songs today!! Please review the notes on the text box in the lesson video for specific words and grammar to review. Great 5 happy star job today.'
-
-//Replace what is in the single quotes with the content for level 2
-var contentLevel2 = 'It was very nice to see name today! He is progressing well in understanding English. He could say and read everything very well!. Excellent job. When working at home, name could underline the first letter of words in the workbook to help associate letters in addition to pictures with the words. This will help with reading. Please review the notes on the text box in the lesson video for specific words and grammar to review. Excellent 5 happy stars today! Keep working hard name!'
-
-//Replace what is in the single quotes with the content for level 3
-var contentLevel3 = 'It was very nice to see name today! name is a wonderful speaker! He knows all of the lesson vocabulary. He can deepen English language understanding with conversation which name did so well today. Great work with all of the grammar and vocabulary too! He can speak in full sentences. He answered lots of questions. name did a good job correcting errors when encouraged. Please review the notes on the text box in the lesson video for specific words and grammar to review. Overall a great job--5 happy stars today!'
-
-//Replace what is in the single quotes with the content for level 4
-var contentLevel4 = 'name is a wonderful reader. Wow - name is reading so fast. He also knows all of the vocabulary very well. He can deepen English language understanding with conversation which name did so well today. He answered lots of questions and used complete sentences in the answers. name could practice reading aloud between lessons to help with fluency. Please review the notes on the text box in the lesson video for specific words and grammar to review. So nice to see name today. 5 super stars!'
-
-//Replace what is in the single quotes with the content for level 5
-var contentLevel5 = 'Please review the notes on the text box in the lesson video for specific words and grammar to review.'
-
-//Replace what is in the single quotes with the content for level 6
-var contentLevel6 = 'Please review the notes on the text box in the lesson video for specific words and grammar to review.'
-
-/*
-var contentLevelUA1 = 'Content Level UA 1'
-
-var contentLevelUA2 = 'name is progressing so well in speaking! He is listening, paying attention, and repeating very well! name can circle first letters of words to help with reading. He understood all of the directions and circled all of the answers correctly too! Wow. 5 stars! He is creating originalsentences expressing ideas using correct English grammar.Keep working hard. Adorable student!! Please review the notes on the text box in the lesson video for specific words and grammar to review. Congratulations on an excellent assessment.'
-
-var contentLevelUA3 = 'Congratulations on a great assessment! I see progress in speaking and recognizing vocabulary words. 5 super stars! name can read aloud from the workbook between classes to help with fluency and pronunciation of longer words. Name ability to understand and remember what is read is excellent. Please review the notes on the text box in the lesson video for specific words and grammar to review. '
-
-var contentLevelUA4 = 'Content Level UA 1'
-
-var contentLevelUA5 = 'Content Level UA 1'
-
-var contentLevelUA6 = 'Content Level UA 1'
-
-var contentLevelUAPreVIP = 'Content Level UA 1'
-*/
-
-var openingSentence = "It was very nice to see name today. "
-
-var endingSentence = 'See you again soon! -From Teacher Deborah'
-
-var sampleSentencesL1 = ['boy is progressing so well in speaking.', 'boy is listening, paying attention, and repeating very well.', 
-'boy can circle first letters of words to help with reading.', 'boy understood all of the directions and circled all of the answers correctly too.', 
-'Keep working hard.', 'Great job this lesson.', 'boy is progressing well in understanding.', 'boy can follow the directions easily.', 'boy repeats well after teacher.',
-'boy is able to interact with the teacher repeating the words and sounds very well.', 'Excellent 5 happy star job!']
-
-var sampleSentencesL2 = ['boy is progressing well in understanding.', 'boy can follow the directions easily.', 'boy repeats well after teacher.',
-'boy is able to interact with the teacher repeating the words and sounds very well.', 'Excellent 5 happy star job!', 'boy is progressing so well in speaking.', 
-'boy is listening, paying attention, and repeating very well.', 'boy can circle first letters of words to help with reading.', 
-'boy understood all of the directions and circled all of the answers correctly too', 'Wow. Keep working hard.', 
-'boy is creating own sentences expressing own ideas using correct grammar.']
-
-var sampleSentencesL3 = ['5 happy stars today! ', 'boy is progressing well in understanding.', 'boy is a wonderful reader.', 'boy knows all of the lesson vocabulary.',
-'boy can deepen language understanding with conversation which was done so well today.', ' boy is wonderful and hardworking and I see progress throughout the class.',
-'Wow - reading so fast.', 'boy is an exceptional student.', 'I can see that boy is working very hard on his English.', 'Congratulations on a great assessment.',
-'boy spoke very well.', 'boy did a very good job today.']
-
-
-var sampleSentencesL4 = ['5 happy stars today! ', 'boy is progressing well in understanding.', ' boy is wonderful and hardworking and I see progress throughout the class.',
-'boy is an exceptional student', 'I can see that boy is working very hard on his English.', 'Congratulations on a great assessment.']
-
-var sampleSentencesTrial = ['It was so nice to meet you today.', 'boy is a hardworking student.', 'boy could repeat all of the words and sentences.', 'Excellent 5 star job.', 
-'I think boy could continue to rapidly advance in English with VIPKID.', 'I think starting at a young age gives a big advantage.', 'boy is an excellent candidate for VIPKID.']
-
-var sampleSentences = ['He is a hard working student.', 'He speaks very well!', 'He could repeat all of the words and letters.', 'He is young and learning this type of classroom.', 'I am impressed at how quickly name learns!', 'He will feel comfortable to learn English.', 'Excellent 5 star job!', 'I think with practice in this type of setting, name will rapidly advance in the program.', 'I think starting at a young age gives name a big advantage.', 'He is progressing so well in speaking.', 'name is listening, paying attention, and repeating very well.', 
-'Keep working hard.', 'Great job this lesson.', 'He is progressing well in understanding.', 'name can follow the directions easily.', 'He is wonderful and hardworking and I see progress throughout the class.', 'He is an exceptional student.', 'I can see that name is working very hard on his English.', 'Please review the notes on the text box in the lesson video for specific words and grammar to review.', 'He participates fully in class.']
-
-
-function generateReview(gender, name, content)
-{
-	content = content.replace(/name/g, name)
-	if (gender == 'She')
-	{
-		content = content.replace(/He/g, 'She')
-	}
-	var review = content + endingSentence
-	var premadesDiv = document.getElementById('premades')
-	var reviewString = "<div class = 'review'><textarea rows='7' cols='90'>" + review + "</textarea></div>"
-	premadesDiv.innerHTML += reviewString
-}
-
-function randomReview(gender, name)
-{
-	var review = openingSentence //first sentence
-	var usedIndexes = []
-	//random sentences from bank until 50 words
-	while (review.split(' ').length < 50)
-	{
-		var randomIndex = Math.floor(Math.random() * sampleSentences.length);
-		if (!usedIndexes.includes(randomIndex))
-		{
-			usedIndexes.push(randomIndex)
-			var randomSentence = sampleSentences[randomIndex];
-			review += randomSentence;
-			review += ' '
-		}
-	}
-	review += endingSentence // ending sentence
-	review = review.replace(/name/g, name)
-	if (gender == 'She')
-	{
-		review = review.replace(/He/g, 'She')
-	}
-	var premadesDiv = document.getElementById('premades')
-	var reviewString = "<div class = 'review'><textarea rows='7' cols='90'>" + review + review.split(' ').length + "</textarea></div>"
-	premadesDiv.innerHTML += reviewString
-}
-
-function createRandomizedReview(gender, name, sampleSentences)
-{
-	var review = {title: '', text: ''};
-	var i = 0;
-	var usedIndexes = []
-	while (review.text.split(' ').length < 50)
-	{
-		var randomIndex = Math.floor(Math.random() * sampleSentences.length);
-		if (!usedIndexes.includes(randomIndex))
-		{
-			usedIndexes.push(randomIndex)
-			var randomSentence = sampleSentences[randomIndex];
-			if (i % 2 == 0)
-			{
-				randomSentence = randomSentence.replace('boy', gender)
-				console.log(randomSentence)
-
-			}
-			else
-			{
-				randomSentence = randomSentence.replace('boy', name)
-			}
-			console.log(randomSentence)
-			console.log(randomSentence.replace('boy', gender))
-			review.text += randomSentence;
-			review.text += ' '
-			i += 1
-		}
-	}
-	review.text += endingSentences[Math.floor(Math.random() * endingSentences.length)]
-	viewReview(review)
-	return review;
-}
-
-
-
-
-function viewReview(review)
-{
-	var premadesDiv = document.getElementById('premades')
-	var reviewString = "<div class = 'review'><textarea rows='7' cols='90'>" + review.title + ' ' + review.text + "</textarea></div>"
-	premadesDiv.innerHTML += reviewString
-}
-
-function display()
+var goodParagraph = '';var Introduction0 = ["You started the class without any introduction of yourself. VIPKID teachers should create a strong learning environment for its students by welcoming them into class in a warm fashion.", false]
+var Introduction1 = ["You greeted the student at the beginning of the class in a somewhat natural fashion. In order to improve the student's learning experience, ask at least one rapport builidng question at the start of class.", false]
+var Introduction2 = ["You were able to create a comfortable learning environment by warmly greeting the student at the start of class, and asking rapport building questions to ease the student into the lesson.", true]
+var ClassTime0 = ["You covered some of the class materials but missed out on several key slides. The VIPKID curriculum is designed with a full 25-minute teaching session in mind and as a result, all of the class content must be covered.", false]
+var ClassTime1 = ["You covered the majority of the material on the slides but missed some lesson content. The VIPKID curriculum is designed with a full 25-minute teaching session in mind and as a result, all of the class content must be covered.", false]
+var ClassTime2 = ["You covered all the material on the slides and paced yourself well.", true]
+var LessonPreparation0 = ["It appeared as if you were frequently reading the teacher directions during class. It would be best if you better prepared your lesson by becoming more familiar with the lesson objectives and better laid our your props. This will create a strong learning environment for the student and ensure the class flows smoothly.", false]
+var LessonPreparation1 = ["It appeared as if you were frequently reading the teacher directions during class. It would be best if you better prepared your lesson by becoming familiar with the lesson objectives and better laid out your props. This will create a strong learning environment for the student and ensure the class flows smoothly.", false]
+var LessonPreparation2 = ["You appeared to be mostly familiar with the content of the slides and you had materials and tools prepared to deliver the content. However, at times, it appeared as if you were unsure about what the upcoming class materials were about. As a result, the student appeared disinterested in the class. In a real life VIPKID classroom, it is of the utmost importance that the teacher be very familiar with the class content and plan the lesson beforehand to create an excellent learning environment.", true]
+var LessonPreparation3 = ["You prepared appropriate materials and tools to effectively deliver and extend the lesson content of each slide. You had smooth transitions between slides and never interrupted the class to read the teacher directions. Fun and engaging activities were created and successfully executed for each slide that helped the student achieve the learning target of the lesson. ", true]
+var SupplementaryTools0 = ["You did not use any props/supplementary tools during the class. Props do not need to be expensive investments; look around your home for objects that can be relevant to the lesson.", false]
+var SupplementaryTools1 = ["You used some props but could have benefitted from a few more props. Props do not need to be expensive investments; look around your home for objects that are relevant to the lesson.", false]
+var SupplementaryTools2 = ["You used plenty of props to enhance the student\'s learning environment. These props created a fun setting for the student and you were able to utilize them in a fun and exciting way. ", true]
+var Visibletool0 = ["You did not use the props/supplementary tools in a clear and visible fashion in front of the camera. Be sure to be aware of your visibility within the camera area.", false]
+var Visibletool1 = ["You used the props/supplementary tools in a clear and visible fashion in front of the camera.", true]
+var masteryofEnglish0 = ["You made several mistakes involving the usage of appropriate phonics, vocabulary, syntax, grammar, and diction for the age/learning level of the student. This demonstrates that you have a competent understanding of the English language; however, VIPKID teachers must have a comprehensive understanding of the English language.", false]
+var masteryofEnglish1 = ["You used correct phonics, vocabulary, syntax, grammar, and diction at times during the class. However, you occasionally failed to demonstrate the proper use of phonics, vocabulary, syntax, grammar, or diction at al times. This demonstrates that you have an understanding of the English language; however, VIPKID teachers must have a comprehensive understanding of the English language.", false]
+var masteryofEnglish2 = ["You used correct phonics, vocabulary, syntax, grammar, and diction for the majority of the class. However, you occasionally failed to demonstrate the proper use of phonics, vocabulary, syntax, grammar, or diction. This demonstrates that you have a competent understanding of the English language; however, VIPKID teachers must have a comprehensive understanding of the English language.", true]
+var masteryofEnglish3 = ["You had no problems using correct phonics, vocabulary, syntax, grammar, and diction throughout the class. This demonstrates that you have a comprehensive understanding of the English language.", true]
+var SpeakingSpeed0 = ["Your speaking speed was inappropriate for the student's level and you made no attempt to adapt to the speaking speed of the student. Having level-appropriate speaking speed is important for teaching ESL learners as they have varied listening proficiency.", false]
+var SpeakingSpeed1 = ["You spoke at an inappropriate speed for the majority of the class and made limited attempts to adapt to the speaking speed of the student. Having level-appropriate speaking speed is important for teaching ESL learners as they have varied listening proficiency.", false]
+var SpeakingSpeed2 = ["At times you spoke at an inappropriate speed but made attempts to adjust your speaking speed. Having level-appropriate speaking speed is important for teaching ESL learners as they have varied listening proficiency.", true]
+var SpeakingSpeed3 = ["Your speaking speed was appropriate for the student\'s level (slow for lower-level student and comparatively faster for higher-level student). Furthermore, you were able to adapt quickly to the level of the student. Having level-appropriate speaking speed is important for teaching ESL learners as they have varied listening proficiency.", true]
+var IncidentalLanguage0 = ["The complexity of words and length of sentences in your language were not appropriate for the student's level during the class. You consistently used words or sentences that were beyond the student's level. Always be sure to refer to the lesson objectives and prior knowledge list to become familiar with the student's prior english knowledge.", false]
+var IncidentalLanguage1 = ["The complexity of words and length of sentences in your language were not always appropriate for the student's level during the class. Oftentimes you used words or sentences that were beyond the student's level. Always be sure to refer to the lesson objectives and prior knowledge list to become familiar with the student's prior english knowledge.", false]
+var IncidentalLanguage2 = ["The complexity of words and length of sentences in your language were appropriate for the student's level for the majority of the class; however, at times you used words or sentences that were beyond the student's level. Always be sure to refer to the lesson objectives and prior knowledge list to become familiar with the student's prior english knowledge.", true]
+var IncidentalLanguage3 = ["The complexity of words and length of sentences in your language were appropriate for the student\'s level throughout the class. You used language that the student would be familiar with and therefore were able to communicate with the student efficiently and effectively.", true]
+var TPR0 = ["You did not use TPR (Total Physical Response) techniques to assist with your teaching. Neither instructional TPR (cupping the ear, cupping the eyes, pointing to the mouth, etc) nor educational TPR (mimicking the letters, mimicking an object or an action, etc) was used by you to help the student understand classroom commands or the lesson content. ", false]
+var TPR1 = ["You used very little TPR (Total Physical Response) techniques to assist with your teaching.  Only instructional TPR (cupping ear, cupping eyes, pointing to mouth, etc) or only educational TPR (mimicking the objects or animals, mimicking the actions, etc) was used by you during the class and you used it in an inconsistent fashion. ", false]
+var TPR2 = ["You used TPR (Total Physical Response) techniques to assist with your teaching during the class. Instructional TPR (cupping ear, cupping eyes, pointing to mouth, etc) and/or educational TPR (mimicking the objects or animals, mimicking the actions, etc) was used by you to ensure active learning on the student's part. Be sure to use both types of TPR consistently throughout the lesson.", true]
+var TPR3 = ["You did an excellent job using TPR (Total Physical Response) techniques throughout the class to assist with your teaching. You used Instructional TPR (cupping ear, cupping eyes, pointing to mouth, etc) effectively in order to help the student understand classroom commands, and educational TPR (mimicking the objects or animals, mimicking the actions, etc) to encourage student to physically respond to important lesson content in order to achieve understanding. Your use of TPR  helped the student engage in active learning.", true]
+var Modeling0 = ["You did not give the student effective demonstration on how to complete tasks by modelling an on-screen activity or modelling a conversation first when the student was confused.", false]
+var Modeling1 = ["You did not always give the student effective demonstration on how to complete tasks by modelling an on-screen activity or modelling a conversation first when the student was confused.", false]
+var Modeling2 = ["You gave the student demonstration on how to complete tasks by modelling an on-screen activity or modelling a conversation first when the student was confused for the majority of the class. However, on several occasions, you did not involve effective demonstration in your teaching to reduce the student's confusion. Remember to follow the ‘I do - we do - you do’ approach.", true]
+var Modeling3 = ["You gave the student clear demonstrations on how to complete tasks by modelling an on-screen activity or modelling a conversation first when the student was confused. Your demonstration largely helped the student achieve the learning target effectively and efficiently.  When in the classroom, you will want to try to follow the ‘I do- we do- you do’ approach. You used a combination of TPR, props, and interacting with the slide to create an excellent learning environment. ", true]
+var FullSentences0 = ["You rarely encouraged the student to speak in full sentences. You also didn't encourage the student to speak in full sentences using the target vocabulary. This is extremely important in building up student's conversational skills and increasing student output.  ", false]
+var FullSentences1 = ["You encouraged students to speak in full sentences in several occasions, but you allowed one word answers approximately 50% of the time. You could also benefit more from encouraging the student to use target vocabulary. This is extremely important in building up student's conversational skills and increasing student output. ", false]
+var FullSentences2 = ["You did an excellent job encouraging the student to speak in full sentences throughout the class. This is extremely important in building up student\'s conversational skills and increasing student output. You did an excellent job focusing on the target sentences listed in the tips.", true]
+var Corrections0 = ["You seldomly corrected student’s pronunciation and grammar mistakes. It's important to be mindful of student's errors and to correct them in a positive and accurate way in order to optimize the student's learning.", false]
+var Corrections1 = ["You corrected some of student’s major pronunciation and grammar mistakes in a positive fashion. However, you missed out on some other opportunities to correct the student's major mistakes to enhance their learning outcome. You could also consider making corrections in a more positive fashion so the student does not feel discouraged in class. ", false]
+var Corrections2 = ["You corrected all of the student’s major pronunciation and grammar mistakes in a positive fashion. You prompted enough repetition upon student’s mistakes so as to further enhance student’s learning through their own mistakes. ", true]
+var Repetition0 = ["You encouraged very little to no repetition of new words or sentence structures or upon correction of imperfect pronunciation, words, or sentences.", false]
+var Repetition1 = ["You encouraged the student to repeat some new words or sentence structures and/or upon correction of imperfect pronunciation, words, or sentences. However, the student would have benefited more from the opportunity to repeat the target vocabulary more often.", false]
+var Repetition2 = ["You did an excellent job both in letting the student repeat new words or sentences and in encouraging repetition upon correction of imperfect pronunciation, words, or sentences. In doing so you were able to reinforce the student’s understanding and retention of new or complex content. You consistently taught the new vocabulary and had the student repeat the word multiple times before asking them to use it in a sentence. You often prompted repetition after correcting a student\'s mistake. ", true]
+var ResponsetoFeedback0 = ["You applied limited amounts of your Mock Class Mentor's midpoint feedback", false]
+var ResponsetoFeedback1 = ["You accepted your Mock Class Mentor's midpoint feedback, but could have benefited more from applying it in more detail to your class", false]
+var ResponsetoFeedback2 = ["You accepted your Mock Class Mentor\'s midpoint feedback and successfully applied it in teaching part two. In doing so, you achieved a better student learning outcome for the second teaching part. ", true]
+var LessonContent0 = ["You did not follow the teaching objectives throughout your teaching. VIPKID has a specific curriculum in place to optimize the student's learning experience, it is very important to complete the lesson objectives. ", false]
+var LessonContent1 = ["You missed some of the content laid out in the teaching objectives throughout your teaching. You occasionally failed to meet the slide objectives.", false]
+var LessonContent2 = ["You successfully covered all of the content laid out in the teaching objectives. The teaching objectives are carefully designed in a systematic way to achieve an effective learning experience for the student. ", true]
+var Extend0 = ["You did not extend beyond the lesson to help explain the class content.", false]
+var Extend1 = ["You occasionally extended beyond the lesson to help explain the class content. Be sure to extend when appropriate so the student can be provided with enough opportunities to fulfill the learning objectives. ", false]
+var Extend2 = ["You extended beyond the lesson to help explain the class content and allowed for active learning in the class. The student was able to understand the class content better and study more through extension. ", true]
+var StudentOutput0 = ["The student barely spoke during the lesson. It is important to encourage student output so the student can demonstrate to the teacher that they understand the lesson content.", false]
+var StudentOutput1 = ["You tried to allow the student opportunities to practice speaking. However, oftentimes you failed to give the student enough opportunities to speak and the student was not able to fully dive into the lesson content due to a lack of practice. The student wasn't able to speak on every slide, and was mostly prompted to repeat rather than answer questions independently.", false]
+var StudentOutput2 = ["For the majority of the class, you gave the student multiple opportunities to practice speaking based on evaluation of the student's language ability. On some occasions, you did not give the student enough opportunities to speak and the student was not able to fully dive into the content due to a lack of practice.", true]
+var StudentOutput3 = ["Throughout the class, you gave the student ample opportunities to practice speaking based on evaluation of the student\'s language ability, which is extremely important for building up the student\'s speaking proficiency. The student spoke about 50% of the time for the low level class and about 70% for the higher level class. The student was also able to speak on every slide, and was prompted to answer questions rather than repeat after the teacher.", true]
+var Patience0 = ["You frequently interrupted the student and did not wait a sufficient amount of time for the student to answer (3-4 seconds). At times you also appeared frustrated with the student. Please be mindful that English is not the student's first language so they will struggle when learning new languages.", false]
+var Patience1 = ["You tried to be patient with the student during the class; however, you did not successfully exhibit consistent good patience by giving student ample time to respond throughout the class. On occasion (3-4 incidents) you interrupted the student to give a correction. This may cause the student to become discouraged.", false]
+var Patience2 = ["You exhibited patience in waiting for the student and never displayed frustration. You rarely interrupted the student and gave the student plenty of opportunity to respond.", true]
+var Interactivity0 = ["You rarely smiled and did not create an encouraging or fun learning atmosphere for the student. ", false]
+var Interactivity1 = ["You displayed a good teaching attitude for the majoirty of the class. At times you appeared inattentive or unfriendly to the needs of the student.", false]
+var Interactivity2 = ["You displayed excellent teaching attitude by smiling often and constantly encouraging your student, which helped build a positive and fun learning atmosphere in the classroom.", true]
+var energy0 = ["Your energy level was quite low throughout the lesson. Be sure to maintain high energy levels throughout the class, especially during the introduction, activity time, and when rewarding the student.", false]
+var energy1 = ["Overall your energy level was okay during the class, but it waned from time to time. Be sure to maintain high energy levels throughout the class, especially during the introduction, activity time, and when rewarding the student.", false]
+var energy2 = ["Your energy level throughout the class was great and you successfully adjusted your energy level in accordance with the teaching content. It was especially high during the introduction, activity time, and when rewarding the student.", true]
+var reward0 = ["You did not utilize a reward system to reward the student during the class. Teachers are expected to have a reward system in the classroom and use it consistently to reward the student for doing a good job.", false]
+var reward1 = ["You prepared a reward system for the class. However, you did not clearly introduce the reward system at the beginning of the class and/or you did not use it consistently to reward the student for doing a good job throughout the whole class. ", false]
+var reward2 = ["You introduced an age/level-appropriate reward system at the beginning of the class and used it consistently during the class to reward the student for doing a good job, which led to a classroom environment that facilitated student learning. You also gave plenty of verbal praise.", true]
+function feedback()
 {
 	var form = document.getElementById("formL1");
-	console.log(form.gender)
-	var sampleSentences = ''
-	console.log(form.level.value)
-	switch (form.level.value)
-	{
-		case '1':
-			generateReview(form.gender.value, form.name.value, contentLevel1);
-			break;
-		case '2':
-			generateReview(form.gender.value, form.name.value, contentLevel2);
-			break;
-		case '3':
-			generateReview(form.gender.value, form.name.value, contentLevel3);
-			break;
-		case '4':
-			generateReview(form.gender.value, form.name.value, contentLevel4);
-			break;
-		case '5':
-			generateReview(form.gender.value, form.name.value, contentLevel5);
-			break;
-		case '6':
-			generateReview(form.gender.value, form.name.value, contentLevel6);
-			break;
-		case '7':
-			generateReview(form.gender.value, form.name.value, contentPreVIPTrial);
-			break;
-		case '8':
-			generateReview(form.gender.value, form.name.value, contentNonreaderTrial);
-			break;
-		case '9':
-			generateReview(form.gender.value, form.name.value, contentReaderTrial);
-			break;
-		case '10':
-			generateReview(form.gender.value, form.name.value, contentMCPreVIP);
-			break;
-		/*
-		case '11':
-			generateReview(form.gender.value, form.name.value, contentLevelUAPreVIP);
-			break;
-		case '12':
-			generateReview(form.gender.value, form.name.value, contentLevelUA1);
-			break;
-		case '13':
-			generateReview(form.gender.value, form.name.value, contentLevelUA2);
-			break;
-		case '14':
-			generateReview(form.gender.value, form.name.value, contentLevelUA3);
-			break;
-		case '15':
-			generateReview(form.gender.value, form.name.value, contentLevelUA4);
-			break;
-		case '16':
-			generateReview(form.gender.value, form.name.value, contentLevelUA5);
-			break;
-		case '17':
-			generateReview(form.gender.value, form.name.value, contentLevelUA6);
-			break;
-		*/
-		default:
-			//createRandomizedReview(form.gender.value, form.name.value, endingSentences);
-			break;
-	}
-
-	console.log(sampleSentences)
-}
-
-function generate()
+	var goodParagraph = "";
+	var badParagraph = "";var lookup = 'Introduction' + form.Introduction.value;
+if (window[lookup][1])
 {
-	var form = document.getElementById("formL1");
-	console.log(form.gender)
-	var sampleSentences = ''
-	console.log(form.level.value)
-	randomReview(form.gender.value, form.name.value)
-
+goodParagraph += 'Introduction' + ': ' + window[lookup][0] + '<br><br>';
 }
-
-
-
-
-
-document.addEventListener('DOMContentLoaded', function()
+else
 {
-	//var random1 = createRandomizedReview('He', 'Jimmy', sampleSentencesL1)
-});
+badParagraph += 'Introduction' + ': ' + window[lookup][0] + '<br><br>';
+}
+var lookup = 'ClassTime' + form.ClassTime.value;
+if (window[lookup][1])
+{
+goodParagraph += 'Class Time' + ': ' + window[lookup][0] + '<br><br>';
+}
+else
+{
+badParagraph += 'Class Time' + ': ' + window[lookup][0] + '<br><br>';
+}
+var lookup = 'LessonPreparation' + form.LessonPreparation.value;
+if (window[lookup][1])
+{
+goodParagraph += 'Lesson Preparation' + ': ' + window[lookup][0] + '<br><br>';
+}
+else
+{
+badParagraph += 'Lesson Preparation' + ': ' + window[lookup][0] + '<br><br>';
+}
+var lookup = 'SupplementaryTools' + form.SupplementaryTools.value;
+if (window[lookup][1])
+{
+goodParagraph += 'Supplementary Tools' + ': ' + window[lookup][0] + '<br><br>';
+}
+else
+{
+badParagraph += 'Supplementary Tools' + ': ' + window[lookup][0] + '<br><br>';
+}
+var lookup = 'Visibletool' + form.Visibletool.value;
+if (window[lookup][1])
+{
+goodParagraph += 'Visible tool' + ': ' + window[lookup][0] + '<br><br>';
+}
+else
+{
+badParagraph += 'Visible tool' + ': ' + window[lookup][0] + '<br><br>';
+}
+var lookup = 'masteryofEnglish' + form.masteryofEnglish.value;
+if (window[lookup][1])
+{
+goodParagraph += 'mastery of English ' + ': ' + window[lookup][0] + '<br><br>';
+}
+else
+{
+badParagraph += 'mastery of English ' + ': ' + window[lookup][0] + '<br><br>';
+}
+var lookup = 'SpeakingSpeed' + form.SpeakingSpeed.value;
+if (window[lookup][1])
+{
+goodParagraph += 'Speaking Speed' + ': ' + window[lookup][0] + '<br><br>';
+}
+else
+{
+badParagraph += 'Speaking Speed' + ': ' + window[lookup][0] + '<br><br>';
+}
+var lookup = 'IncidentalLanguage' + form.IncidentalLanguage.value;
+if (window[lookup][1])
+{
+goodParagraph += 'Incidental Language' + ': ' + window[lookup][0] + '<br><br>';
+}
+else
+{
+badParagraph += 'Incidental Language' + ': ' + window[lookup][0] + '<br><br>';
+}
+var lookup = 'TPR' + form.TPR.value;
+if (window[lookup][1])
+{
+goodParagraph += 'TPR' + ': ' + window[lookup][0] + '<br><br>';
+}
+else
+{
+badParagraph += 'TPR' + ': ' + window[lookup][0] + '<br><br>';
+}
+var lookup = 'Modeling' + form.Modeling.value;
+if (window[lookup][1])
+{
+goodParagraph += 'Modeling' + ': ' + window[lookup][0] + '<br><br>';
+}
+else
+{
+badParagraph += 'Modeling' + ': ' + window[lookup][0] + '<br><br>';
+}
+var lookup = 'FullSentences' + form.FullSentences.value;
+if (window[lookup][1])
+{
+goodParagraph += 'Full Sentences' + ': ' + window[lookup][0] + '<br><br>';
+}
+else
+{
+badParagraph += 'Full Sentences' + ': ' + window[lookup][0] + '<br><br>';
+}
+var lookup = 'Corrections' + form.Corrections.value;
+if (window[lookup][1])
+{
+goodParagraph += 'Corrections' + ': ' + window[lookup][0] + '<br><br>';
+}
+else
+{
+badParagraph += 'Corrections' + ': ' + window[lookup][0] + '<br><br>';
+}
+var lookup = 'Repetition' + form.Repetition.value;
+if (window[lookup][1])
+{
+goodParagraph += 'Repetition' + ': ' + window[lookup][0] + '<br><br>';
+}
+else
+{
+badParagraph += 'Repetition' + ': ' + window[lookup][0] + '<br><br>';
+}
+var lookup = 'ResponsetoFeedback' + form.ResponsetoFeedback.value;
+if (window[lookup][1])
+{
+goodParagraph += 'Response to Feedback' + ': ' + window[lookup][0] + '<br><br>';
+}
+else
+{
+badParagraph += 'Response to Feedback' + ': ' + window[lookup][0] + '<br><br>';
+}
+var lookup = 'LessonContent' + form.LessonContent.value;
+if (window[lookup][1])
+{
+goodParagraph += 'Lesson Content' + ': ' + window[lookup][0] + '<br><br>';
+}
+else
+{
+badParagraph += 'Lesson Content' + ': ' + window[lookup][0] + '<br><br>';
+}
+var lookup = 'Extend' + form.Extend.value;
+if (window[lookup][1])
+{
+goodParagraph += 'Extend' + ': ' + window[lookup][0] + '<br><br>';
+}
+else
+{
+badParagraph += 'Extend' + ': ' + window[lookup][0] + '<br><br>';
+}
+var lookup = 'StudentOutput' + form.StudentOutput.value;
+if (window[lookup][1])
+{
+goodParagraph += 'Student Output' + ': ' + window[lookup][0] + '<br><br>';
+}
+else
+{
+badParagraph += 'Student Output' + ': ' + window[lookup][0] + '<br><br>';
+}
+var lookup = 'Patience' + form.Patience.value;
+if (window[lookup][1])
+{
+goodParagraph += 'Patience' + ': ' + window[lookup][0] + '<br><br>';
+}
+else
+{
+badParagraph += 'Patience' + ': ' + window[lookup][0] + '<br><br>';
+}
+var lookup = 'Interactivity' + form.Interactivity.value;
+if (window[lookup][1])
+{
+goodParagraph += 'Interactivity' + ': ' + window[lookup][0] + '<br><br>';
+}
+else
+{
+badParagraph += 'Interactivity' + ': ' + window[lookup][0] + '<br><br>';
+}
+var lookup = 'energy' + form.energy.value;
+if (window[lookup][1])
+{
+goodParagraph += 'energy' + ': ' + window[lookup][0] + '<br><br>';
+}
+else
+{
+badParagraph += 'energy' + ': ' + window[lookup][0] + '<br><br>';
+}
+var lookup = 'reward' + form.reward.value;
+if (window[lookup][1])
+{
+goodParagraph += 'reward' + ': ' + window[lookup][0] + '<br><br>';
+}
+else
+{
+badParagraph += 'reward' + ': ' + window[lookup][0] + '<br><br>';
+}
+var good = document.getElementById("goodParagraph");
+	var bad = document.getElementById("badParagraph");
+	good.innerHTML=goodParagraph;
+	bad.innerHTML=badParagraph;
+	window.location="#goodParagraph"}
